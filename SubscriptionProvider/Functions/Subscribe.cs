@@ -61,7 +61,7 @@ namespace SubscriptionProvider.Functions
                         {
                             _dataContext.Subscriptions.Add(subscriptionModel);
                             await _dataContext.SaveChangesAsync();
-                            return new CreatedResult();
+                            return new OkResult();
 
                         }
                         catch (Exception ex) 
